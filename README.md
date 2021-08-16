@@ -2,7 +2,7 @@
 
 # New Relic Eslint Config
 
->[Brief description - what is the project and value does it provide? How often should users expect to get releases? How is versioning set up? Where does this project want to go?]
+Base eslint configuration for New Relic Node.js agent team
 
 ## Installation
 
