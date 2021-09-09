@@ -94,7 +94,9 @@ module.exports = {
     'space-unary-ops': 'error',
     strict: 'error',
     'use-isnan': 'error',
-    'wrap-iife': 'error'
+    'wrap-iife': 'error',
+    'prefer-const': 'error',
+    'no-var': 'warn'
   },
   overrides: [
     {
