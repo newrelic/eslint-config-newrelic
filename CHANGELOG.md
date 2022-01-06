@@ -1,3 +1,11 @@
+### v0.0.4 (2022-01-05)
+
+* Added workflow to automatically add issues/Prs to Node.js Engineering Board
+
+* Added CHANGELOG.md to track this file, so meta.
+
+* Added workflow to automatically prepare releases.
+
 ### v0.0.3 (2021-09-09):
 
  * Added prefer-const and no-var rules
