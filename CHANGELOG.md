@@ -2,14 +2,6 @@
 
 * Added overrides to disable the ESM rules of no unpublished or extraneous import.
 
-* Updated `add-to-board` to use org level `NODE_AGENT_GH_TOKEN`
-
-# Links
-
- * Fixes #1052
-
-* Adding template for PRs
-
 ### v0.0.4 (2022-01-05)
 
 * Added workflow to automatically add issues/Prs to Node.js Engineering Board
