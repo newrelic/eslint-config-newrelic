@@ -1,3 +1,7 @@
+### v0.1.0 (2022-09-19)
+
+* Added overrides to disable the ESM rules of no unpublished or extraneous import.
+
 ### v0.0.4 (2022-01-05)
 
 * Added workflow to automatically add issues/Prs to Node.js Engineering Board
