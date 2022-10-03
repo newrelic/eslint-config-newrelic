@@ -13,7 +13,7 @@
   "author": "New Relic Node.js agent team <nodejs@newrelic.com>",
   "license": "Apache-2.0",
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-header": "^3.1.1",
     "eslint-plugin-node": "^11.1.0",
@@ -21,7 +21,7 @@
     "prettier": "^2.3.2"
   },
   "peerDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^8.24.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-header": "^3.1.1",
     "eslint-plugin-node": "^11.1.0",
