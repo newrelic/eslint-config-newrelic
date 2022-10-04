@@ -1,3 +1,7 @@
+### v0.2.0 (2022-10-04)
+
+* Updated eslint to 8.x.
+
 ### v0.1.0 (2022-09-19)
 
 * Added overrides to disable the ESM rules of no unpublished or extraneous import.
