@@ -1,6 +1,6 @@
 {
   "name": "@newrelic/eslint-config",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "Eslint ruleset for New Relic Node.js agent",
   "main": "index.js",
   "scripts": {
