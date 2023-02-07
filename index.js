@@ -14,14 +14,16 @@ module.exports = {
   },
   extends: [
     'plugin:node/recommended',
-    'plugin:prettier/recommended'
+    'plugin:prettier/recommended',
+    'plugin:sonarjs/recommended'
   ],
   parserOptions: {
     ecmaVersion: '2019'
   },
   plugins: [
     'header',
-    'prettier'
+    'prettier',
+    'sonarjs'
   ],
   ignorePatterns: ['invalid-json/'],
   rules: {
@@ -121,7 +123,10 @@ module.exports = {
       rules: {
         'func-names': 'off',
         'max-nested-callbacks': 'off',
-        'no-shadow': ['warn', { allow: ['t', 'err', 'shim', 'error'] }]
+        'no-shadow': ['warn', { allow: ['t', 'err', 'shim', 'error'] }],
+        // TODO: remove these overrides as part of https://issues.newrelic.com/browse/NEWRELIC-5257
+        'sonarjs/no-duplicate-string': 'off',
+        'sonarjs/cognitive-complexity': 'off'
       }
     }
   ]
