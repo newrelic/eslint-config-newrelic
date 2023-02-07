@@ -1,3 +1,7 @@
+### v0.3.0 (2023-02-07)
+
+* Added [eslint-plugin-sonarjs](https://github.com/SonarSource/eslint-plugin-sonarjs) recommended ruleset.
+
 ### v0.2.0 (2022-10-04)
 
 * Updated eslint to 8.x.
