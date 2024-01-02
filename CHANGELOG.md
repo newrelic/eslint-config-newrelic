@@ -1,7 +1,7 @@
 ### v0.4.0 (2024-01-02)
 
-* Update dependencies
 * Set new baseline ECMAScript version
+* Update dependencies
 * Bumps [semver](https://github.com/npm/node-semver) from 6.3.0 to 6.3.1.
 * Bumps [word-wrap](https://github.com/jonschlinkert/word-wrap) from 1.2.3 to 1.2.5.
 * Updated README links to point to new forum link due to repolinter ruleset change
