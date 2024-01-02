@@ -18,7 +18,7 @@ module.exports = {
     'plugin:sonarjs/recommended'
   ],
   parserOptions: {
-    ecmaVersion: '2019'
+    ecmaVersion: 'latest'
   },
   plugins: [
     'header',
