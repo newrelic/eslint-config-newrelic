@@ -4,11 +4,6 @@
 
 * Migrated to eslint@9 ([#37](https://github.com/newrelic/eslint-config-newrelic/pull/37)) ([f40248f](https://github.com/newrelic/eslint-config-newrelic/commit/f40248f8101db759449c1f137b56a02870f30012))
 
-#### Security improvements
-
-* **deps:** bump braces from 3.0.2 to 3.0.3 ([#32](https://github.com/newrelic/eslint-config-newrelic/pull/32)) ([11a5203](https://github.com/newrelic/eslint-config-newrelic/commit/11a5203a65d2cbdd6357d4ca48115c52d23f2ecb))
-    * Signed-off-by: dependabot[bot] <support@github.com> Co-authored-by: dependabot[bot] <49699333+dependabot[bot]@users.noreply.github.com>
-
 #### Miscellaneous chores
 
 * Removed lockfile and added .npmrc ([#34](https://github.com/newrelic/eslint-config-newrelic/pull/34)) ([c578002](https://github.com/newrelic/eslint-config-newrelic/commit/c5780025fff0c92d6d9012e6132e84fb42ad2459))
