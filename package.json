@@ -12,25 +12,20 @@
   ],
   "author": "New Relic Node.js agent team <nodejs@newrelic.com>",
   "license": "Apache-2.0",
-  "devDependencies": {},
-  "dependencies": {
-    "eslint": "^8.24.0",
-    "eslint-config-prettier": "^9.1.0",
-    "eslint-plugin-header": "^3.1.1",
-    "eslint-plugin-node": "^11.1.0",
-    "eslint-plugin-prettier": "^5.1.2",
-    "eslint-plugin-sonarjs": "^0.23.0",
-    "prettier": "^3.1.1"
-  },
-  "engines": {
-    "node": ">=12"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/newrelic/eslint-config-newrelic"
   },
   "files": [
     "index.js",
+    "eslint-plugin-newrelic-header.js",
     "*.md"
-  ]
+  ],
+  "peerDependencies": {
+    "eslint": "^9.17.0"
+  },
+  "dependencies": {
+    "eslint-plugin-sonarjs": "^3.0.1",
+    "neostandard": "^0.12.0"
+  }
 }

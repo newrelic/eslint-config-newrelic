@@ -2,43 +2,73 @@
 
 # New Relic Eslint Config
 
-Base eslint configuration for New Relic Node.js agent team
+Base eslint configuration for New Relic Node.js agent team.
 
 ## Installation
 
 ```
-npm install --save-dev @newrelic/eslint-config
+npm install --save-dev @newrelic/eslint-config eslint
 ```
 
 ## Getting Started
 
-Add the following to your `.eslintrc.js`:
+Add the following to your `eslint.config.js`:
 
+```js
+'use strict'
+
+const sharedConfig = require('@newrelic/eslint-config')
+
+module.exports = [
+  ...sharedConfig.recommended
+]
 ```
-{
-  "extends": "@newrelic"
-}
-```
+
+That should be all you need to do for a simple project. However, some projects
+have requirements that go beyond the baseline. In order to support such
+projects, all of the internal configuration and plugins are exported:
+
++ `configs`: An object where the keys are descriptive names of eslint
+configuration objects, and the values are those configuration objects.
++ `plugins`: An object where the keys are plugin names, and the values are
+those plugins.
++ `recommended`: An array of the baseline configurations.
 
 ## Support
 
-New Relic hosts and moderates an online forum where customers can interact with New Relic employees as well as other customers to get help and share best practices. Like all official New Relic open source projects, there's a related Community topic in the New Relic Explorers Hub. You can find this project's topic/threads [here](https://forum.newrelic.com).
+New Relic hosts and moderates an online forum where customers can interact with
+New Relic employees as well as other customers to get help and share best
+practices. Like all official New Relic open source projects, there's a related
+Community topic in the New Relic Explorers Hub. You can find this project's
+topic/threads [here](https://forum.newrelic.com).
 
 ## Contribute
 
-We encourage your contributions to improve [project name]! Keep in mind that when you submit your pull request, you'll need to sign the CLA via the click-through using CLA-Assistant. You only have to sign the CLA one time per project.
+We encourage your contributions to improve [project name]! Keep in mind that
+when you submit your pull request, you'll need to sign the CLA via the
+click-through using CLA-Assistant. You only have to sign the CLA one time
+per project.
 
-If you have any questions, or to execute our corporate CLA (which is required if your contribution is on behalf of a company), drop us an email at opensource@newrelic.com.
+If you have any questions, or to execute our corporate CLA (which is required if
+your contribution is on behalf of a company), drop us an email at
+opensource@newrelic.com.
 
 **A note about vulnerabilities**
 
-As noted in our [security policy](../../security/policy), New Relic is committed to the privacy and security of our customers and their data. We believe that providing coordinated disclosure by security researchers and engaging with the security community are important means to achieve our security goals.
+As noted in our [security policy](../../security/policy), New Relic is committed
+to the privacy and security of our customers and their data. We believe that
+providing coordinated disclosure by security researchers and engaging with the
+security community are important means to achieve our security goals.
 
-If you believe you have found a security vulnerability in this project or any of New Relic's products or websites, we welcome and greatly appreciate you reporting it to New Relic through [HackerOne](https://hackerone.com/newrelic).
+If you believe you have found a security vulnerability in this project or any of
+New Relic's products or websites, we welcome and greatly appreciate you
+reporting it to New Relic through [HackerOne](https://hackerone.com/newrelic).
 
-If you would like to contribute to this project, review [these guidelines](./CONTRIBUTING.md).
+If you would like to contribute to this project, review
+[these guidelines](./CONTRIBUTING.md).
 
 
 ## License
-New Relic Eslint Config is licensed under the [Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
+New Relic Eslint Config is licensed under the
+[Apache 2.0](http://apache.org/licenses/LICENSE-2.0.txt) License.
 
