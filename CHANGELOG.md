@@ -1,3 +1,18 @@
+### v0.5.0 (2025-01-08)
+
+#### Features
+
+* Migrated to eslint@9 ([#37](https://github.com/newrelic/eslint-config-newrelic/pull/37)) ([f40248f](https://github.com/newrelic/eslint-config-newrelic/commit/f40248f8101db759449c1f137b56a02870f30012))
+
+#### Miscellaneous chores
+
+* Removed lockfile and added .npmrc ([#34](https://github.com/newrelic/eslint-config-newrelic/pull/34)) ([c578002](https://github.com/newrelic/eslint-config-newrelic/commit/c5780025fff0c92d6d9012e6132e84fb42ad2459))
+
+#### Continuous integration
+
+* Removed `use_new_release` input from prepare release workflow ([#27](https://github.com/newrelic/eslint-config-newrelic/pull/27)) ([115ac47](https://github.com/newrelic/eslint-config-newrelic/commit/115ac47ec5cd69655c9a7b3dcf63f91f79952ba4))
+* Updated CI process for releases ([#26](https://github.com/newrelic/eslint-config-newrelic/pull/26)) ([861d983](https://github.com/newrelic/eslint-config-newrelic/commit/861d983c74639af88a4f738abe24d73d959f1ca8))
+
 ### v0.4.0 (2024-01-02)
 
 * Set new baseline ECMAScript version
