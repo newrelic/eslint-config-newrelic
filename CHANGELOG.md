@@ -1,3 +1,9 @@
+### v0.6.0 (2025-08-12)
+
+#### Miscellaneous chores
+
+* Updated config ([#40](https://github.com/newrelic/eslint-config-newrelic/pull/40)) ([6e31965](https://github.com/newrelic/eslint-config-newrelic/commit/6e319656c6818461ca24ad57a3b564fcdbb1e28f))
+
 ### v0.5.0 (2025-01-08)
 
 #### Features
