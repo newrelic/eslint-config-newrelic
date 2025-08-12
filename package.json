@@ -25,7 +25,8 @@
     "eslint": "^9.17.0"
   },
   "dependencies": {
-    "eslint-plugin-sonarjs": "^3.0.1",
-    "neostandard": "^0.12.0"
+    "@eslint/json": "^0.13.1",
+    "eslint-plugin-sonarjs": "^3.0.4",
+    "neostandard": "^0.12.2"
   }
 }

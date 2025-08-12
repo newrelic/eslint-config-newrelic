@@ -1,6 +1,7 @@
 'use strict'
 
 const neostandard = require('neostandard')
+const json = require('@eslint/json').default
 const sonarjs = require('eslint-plugin-sonarjs')
 const header = require('./eslint-plugin-newrelic-header.js')
 
@@ -12,6 +13,7 @@ const header = require('./eslint-plugin-newrelic-header.js')
 
 const plugins = {
   ...neostandard.plugins,
+  json,
   sonarjs,
   header
 }
@@ -60,7 +62,34 @@ const baselineNewRelicConfig = {
     '@stylistic/jsx-indent': 'off',
 
     // These neostandard would generate unnecessary noise:
-    '@stylistic/space-before-function-paren': 'off'
+    '@stylistic/space-before-function-paren': 'off',
+
+    // Enforce consistency for arrow functions:
+    'arrow-body-style': ['error', 'as-needed', { requireReturnForObjectLiteral: true }],
+    '@stylistic/arrow-parens': ['error', 'always'],
+    '@stylistic/implicit-arrow-linebreak': ['error', 'beside'],
+    '@stylistic/no-confusing-arrow': 'error',
+
+    // Enforce consistency for ternary statements:
+    '@stylistic/multiline-ternary': ['error', 'always-multiline'],
+    'no-nested-ternary': 'error',
+
+    // Function styling:
+    '@stylistic/function-call-argument-newline': ['error', 'consistent'],
+    '@stylistic/function-paren-newline': ['error', 'consistent'],
+
+    // Object declaration styling:
+    // TODO: add destructuring when the rule is available https://github.com/eslint-stylistic/eslint-stylistic/pull/840
+    '@stylistic/object-curly-newline': ['error', {
+      // e.g. const foo = { a }
+      ObjectExpression: { consistent: true },
+      // e.g. const { a } = foo
+      ObjectPattern: { consistent: true },
+      // e.g. import { a } from foo
+      ImportDeclaration: { multiline: true },
+      // e.g. export { a }
+      ExportDeclaration: { consistent: true }
+    }]
   },
 
   linterOptions: {
@@ -73,6 +102,22 @@ const configs = {
   nodeRecommended,
 
   neostandard: neostandard(),
+
+  json: [
+    {
+      files: ['**/*.json'],
+      plugins: { json },
+      language: 'json/json',
+      ignores: ['package-lock.json'],
+      rules: json.configs.recommended.rules
+    },
+    {
+      files: ['**/*.jsonc'],
+      plugins: { json },
+      language: 'json/jsonc',
+      rules: json.configs.recommended.rules
+    },
+  ],
 
   sonarjsBaselineOverrides: {
     rules: {
@@ -131,6 +176,7 @@ module.exports = {
     sonarjs.configs.recommended,
     configs.sonarjsBaselineOverrides,
     nodeRecommended,
+    ...configs.json,
     baselineNewRelicConfig
   ]
 }
