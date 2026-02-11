@@ -1,3 +1,10 @@
+### v0.7.0 (2026-02-11)
+
+#### Miscellaneous chores
+
+* Added accessor-pairs rule ([#43](https://github.com/newrelic/eslint-config-newrelic/pull/43)) ([50de65a](https://github.com/newrelic/eslint-config-newrelic/commit/50de65a4c5f48855268db54c939ff53b97b0fb30))
+* Update release workflow ([#42](https://github.com/newrelic/eslint-config-newrelic/pull/42)) ([2d867ff](https://github.com/newrelic/eslint-config-newrelic/commit/2d867ff58f4fc5dbe5033da0b7cdedcec40bb0c4))
+
 ### v0.6.0 (2025-08-12)
 
 #### Miscellaneous chores
