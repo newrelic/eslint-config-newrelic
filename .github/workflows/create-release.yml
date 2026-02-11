@@ -13,4 +13,3 @@ jobs:
     uses: newrelic/node-newrelic/.github/workflows/release-creation.yml@main
     with:
       changelog_file: CHANGELOG.md
-      workflows: repolinter.yml
