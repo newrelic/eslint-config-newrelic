@@ -47,6 +47,10 @@ const baselineNewRelicConfig = {
     // to read:
     'no-unneeded-ternary': 'off',
 
+    // There are many cases where we need a getter or setter but not the
+    // other:
+    'accessor-pairs': 'off',
+
     // There are times we'd rather have import statements close to the
     // thing that needed them:
     'import-x/first': 'off',
