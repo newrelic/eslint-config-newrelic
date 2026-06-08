@@ -1,3 +1,14 @@
+### v0.8.0 (2026-06-08)
+
+#### Miscellaneous chores
+
+* Removed `repolinter` as it is no longer necessary, assigned necessary permissions to remaining workflows ([#47](https://github.com/newrelic/eslint-config-newrelic/pull/47)) ([9cc8c80](https://github.com/newrelic/eslint-config-newrelic/commit/9cc8c80ffd225faf1facd76d186706f97fdca4d0))
+* Updated dependencies to latest allowable versions ([#49](https://github.com/newrelic/eslint-config-newrelic/pull/49)) ([7757587](https://github.com/newrelic/eslint-config-newrelic/commit/7757587ffe9e0f72504f17ef931479f93730ddc0))
+
+#### Continuous integration
+
+* Added appropriate permissions to `prepare-release.yml` ([#48](https://github.com/newrelic/eslint-config-newrelic/pull/48)) ([d3ca1e8](https://github.com/newrelic/eslint-config-newrelic/commit/d3ca1e8ac8661418b6d8b9b984269d1bc8d0fca8))
+
 ### v0.7.0 (2026-02-11)
 
 #### Miscellaneous chores
