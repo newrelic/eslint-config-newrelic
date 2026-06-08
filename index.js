@@ -20,7 +20,6 @@ const plugins = {
 
 const nodeRecommended = neostandard.plugins.n.configs['flat/recommended']
 delete nodeRecommended.languageOptions.sourceType
-nodeRecommended.rules['n/no-unsupported-features/node-builtins'] = ['error', { version: '>=18.8.0' }]
 nodeRecommended.rules['n/no-process-exit'] = 'off'
 nodeRecommended.rules['n/no-deprecated-api'] = [
   'error',
