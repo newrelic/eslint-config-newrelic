@@ -22,7 +22,7 @@
     "*.md"
   ],
   "peerDependencies": {
-    "eslint": "^9.39.4"
+    "eslint": "^10.0.0"
   },
   "dependencies": {
     "@eslint/json": "^2.1.1",
