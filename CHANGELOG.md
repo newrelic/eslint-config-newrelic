@@ -1,3 +1,9 @@
+### v0.8.1 (2026-10-09)
+
+#### Miscellaneous chores
+
+* Updated dependencies ([#51](https://github.com/newrelic/eslint-config-newrelic/pull/51)) ([a9afc87](https://github.com/newrelic/eslint-config-newrelic/commit/a9afc87adfebe327f60b50f4b42a114c3cf5f4f5))
+
 ### v0.8.0 (2026-06-08)
 
 #### Miscellaneous chores
