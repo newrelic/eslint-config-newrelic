@@ -1,3 +1,9 @@
+### v0.9.1 (2026-10-09)
+
+#### Bug fixes
+
+* Updated eslint peer dependency ([#54](https://github.com/newrelic/eslint-config-newrelic/pull/54)) ([764623b](https://github.com/newrelic/eslint-config-newrelic/commit/764623b2d64c04929e8c3b68b3f5af7b47e36fe1))
+
 ### v0.9.0 (2026-10-09)
 
 #### Miscellaneous chores
