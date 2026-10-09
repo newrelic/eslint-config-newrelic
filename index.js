@@ -64,7 +64,7 @@ const baselineNewRelicConfig = {
     // We don't JSX anyway, so goodbye:
     '@stylistic/jsx-indent': 'off',
 
-    // These neostandard would generate unnecessary noise:
+    // These neostandard rules would generate unnecessary noise:
     '@stylistic/space-before-function-paren': 'off',
 
     // Enforce consistency for arrow functions:
